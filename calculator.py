@@ -16,7 +16,7 @@ def percent_function(part,whole):
     return percent
 def calculator_function():
     print("-"*10 +"Calculator"+"-"*10)
-    print("1. Addition\n2. Substraction\n3. Multiplication\n4. Division\n5.Percentage")
+    print("1. Addition\n2. Substraction\n3. Multiplication\n4. Division\n5.Percentage\n6.Square")
     option = int(input("Enter an option :"))
     if option==1:
         num1=float(input("Enter first number: "))
@@ -43,6 +43,10 @@ def calculator_function():
         whole = float(input("Enter the whole : "))
         percent = percent_function(part,whole)
         print("Percentage :",percent)
+    if option ==6:
+        num = float(input("Enter a number : "))
+        square = mul_function(num,num)
+        print(f"Square of {num} : ",square)
 
 
 calculator_function()
